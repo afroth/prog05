@@ -210,8 +210,8 @@ function genDisplay(){
 	objArray.forEach(function(e) {
 		divContent += '<li>';
 		divContent += JSON.stringify(e);
-                divContent += 'Age'+e.getAge();
-                divContent += 'Zodiac'+e.getZodiac();
+                divContent += 'Age: '+e.getAge();
+                divContent += ' Zodiac: '+e.getZodiac();
 		divContent += '</li>';              
 	});
 	divContent += "</ol>";
@@ -222,7 +222,7 @@ function genDisplay(){
 // class person
 // I used ES6 for the whole class.
 class Person{
-        constructor(first,last,day,month,year,country){
+    constructor(first,last,day,month,year,country){
         this.first =  first; 
         this.last =  last;
         this.day =  day;    
